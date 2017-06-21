@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <input id="new-todo" type="text" placeholder="I want to do...">
+  <input id="toggle-all" type="checkbox">
+</header>
+<section id="main">
+  <ul id="todo-list"></ul>
+  <footer>
+    <span id="todo-count">No item left</span>
+    <button id="completed-clear">Clear Completed</button>
+    <ul id="filters">
+      <li><a class="selected">All</a></li>
+      <li><a>Active</a></li>
+      <li><a>Completed</a></li>
+    </ul>
+  </footer>
+</section>
+<script src="model.js"></script>
+<script src="cookie.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
